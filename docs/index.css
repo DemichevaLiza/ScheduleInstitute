@@ -437,7 +437,6 @@ table {
 
     .A_Logos {
         display: flex;
-        padding-top: 30px;
         padding-bottom: 30px;
         align-items: center;
         gap: 10px;
@@ -557,35 +556,35 @@ table {
     }
 
     .Q_ministry {
-        background-image: url(images/11e740025e8ec627c803.png);
+        background-image: url(images/52fc55e162e6d0f6e085.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 64px;
+        height: 64px;
     }
 
     .Q_Inst {
-        background-image: url(images/a2434a4c63707114f6e8.png);
+        background-image: url(images/e2e0164dd8011deb2988.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 46px;
-        height: 39px;
+        width: 54px;
+        height: 51px;
     }
 
     .Q_Univer {
-        background-image: url(images/be3fcbaae641ffb1ee7a.png);
+        background-image: url(images/1382df4adaafc204489d.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 64px;
+        height: 64px;
     }
 
     .Q_Univer2 {
-        background-image: url(images/0d30653841b62d231621.png);
+        background-image: url(images/15b1e3fead8720df4a46.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 64px;
+        height: 64px;
     }
 }
 :root {
