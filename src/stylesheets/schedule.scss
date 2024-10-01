@@ -264,7 +264,6 @@
 
     .A_Logos {
         display: flex;
-        padding-top: 30px;
         padding-bottom: 30px;
         align-items: center;
         gap: 10px;
@@ -384,34 +383,34 @@
     }
 
     .Q_ministry {
-        background-image: url('/src/images/Q_ministry.png');
+        background-image: url('/src/images/Q_ministry.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 64px;
+        height: 64px;
     }
 
     .Q_Inst {
-        background-image: url('/src/images/Q_Inst.png');
+        background-image: url('/src/images/Q_Inst.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 46px;
-        height: 39px;
+        width: 54px;
+        height: 51px;
     }
 
     .Q_Univer {
-        background-image: url('/src/images/Q_Univer.png');
+        background-image: url('/src/images/Q_Univer.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 64px;
+        height: 64px;
     }
 
     .Q_Univer2 {
-        background-image: url('/src/images/Q_Univer2.png');
+        background-image: url('/src/images/Q_Univer2.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 64px;
+        height: 64px;
     }
 }
