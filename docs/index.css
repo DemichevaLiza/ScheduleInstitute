@@ -213,7 +213,7 @@ table {
 
 
     .A_BlockOfText {
-        width: 320px;
+        width: -webkit-fill-available;
         font-family: 'GothaPro';
         align-self: stretch;
 
@@ -235,7 +235,6 @@ table {
         }
 
         &.h3 {
-            display: flex;
             padding-top: 10px;
             justify-content: center;
             align-items: center;
@@ -259,7 +258,6 @@ table {
         }
 
         &.h5 {
-            display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -309,7 +307,6 @@ table {
 
         &.time {
             width: 120px;
-            display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -321,7 +318,7 @@ table {
         &.timetag {
             display: flex;
             align-items: center;
-            width: 200px;
+            width: -webkit-fill-available;
             gap: 10px;
             color: #E52517;
             font-size: 16px;
@@ -575,7 +572,7 @@ table {
     }
 
     .Q_Univer {
-        background-image: url(images/ad553a3cc294ec3d3c80.svg);
+        background-image: url(images/7bfe65efaab80598023a.svg);
         background-repeat: no-repeat;
         background-size: contain;
         width: 64px;
