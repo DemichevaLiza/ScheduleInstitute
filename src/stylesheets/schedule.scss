@@ -40,7 +40,7 @@
 
 
     .A_BlockOfText {
-        width: 320px;
+        width: -webkit-fill-available;
         font-family: 'GothaPro';
         align-self: stretch;
 
@@ -62,7 +62,6 @@
         }
 
         &.h3 {
-            display: flex;
             padding-top: 10px;
             justify-content: center;
             align-items: center;
@@ -86,7 +85,6 @@
         }
 
         &.h5 {
-            display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -136,7 +134,6 @@
 
         &.time {
             width: 120px;
-            display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -148,7 +145,7 @@
         &.timetag {
             display: flex;
             align-items: center;
-            width: 200px;
+            width: -webkit-fill-available;
             gap: 10px;
             color: #E52517;
             font-size: 16px;
