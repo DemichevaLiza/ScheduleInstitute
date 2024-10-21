@@ -10,6 +10,11 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    color: var(--red);
+}
+
 .A_Logo {
     display: flex;
     flex-direction: column;
@@ -54,6 +59,7 @@ body {
     width: -webkit-fill-available;
     font-family: 'GothaPro';
     align-self: stretch;
+
 
     &.h2 {
         width: 100%;
@@ -357,6 +363,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .Q_Arrow {
