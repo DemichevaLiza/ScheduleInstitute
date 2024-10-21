@@ -185,7 +185,8 @@
             box-shadow: var(--background-shadow);
             background: var(--white);
             color: var(--red);
-            width: 120px;
+            width: 100%;
+            margin-bottom: 20px;
         }
 
         &.day24 {
