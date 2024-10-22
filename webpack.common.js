@@ -1,11 +1,11 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin'); // Подключаем плагин для копирования файлов
 
-const webpack = require('webpack')
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 
 // Добавляем переменную для режима (production или development)
 const isProduction = process.env.NODE_ENV === 'production';
@@ -75,16 +75,15 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            // Настройка для имен файлов в зависимости от режима
             filename: isProduction ? '[name].[contenthash].css' : '[name].css',
             chunkFilename: isProduction ? '[id].[contenthash].css' : '[id].css',
         }),
 
-        // new CopyPlugin({
-        //     patterns: [{ from: 'src/share', to: 'share' }]
-        // }),
+        // Плагин для копирования статических файлов, таких как PDF
+        new CopyPlugin({
+            patterns: [{ from: 'src/share', to: 'share' }] // Копирует файлы из src/share в папку 'share' в сборке
+        }),
 
-        // Landing page
         new HtmlWebpackPlugin({
             hash: true,
             scriptLoading: 'blocking',
@@ -92,7 +91,7 @@ module.exports = {
             filename: './index.html',
             chunks: ['index']
         }),
-        // Partials
+
         new HtmlWebpackPartialsPlugin([
             {
                 path: path.join(__dirname, './src/partials/analytics.html'),
@@ -103,7 +102,7 @@ module.exports = {
         ])
     ],
     optimization: {
-        minimize: isProduction, // Минимизировать только в production
-        minimizer: [new CssMinimizerPlugin()] // Использование минификатора для CSS
+        minimize: isProduction,
+        minimizer: [new CssMinimizerPlugin()] // Минимизация CSS в production
     }
-}
+};
