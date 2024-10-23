@@ -249,7 +249,9 @@ a {
     }
 
     &.inform {
-        width: 180px;
+        text-align: center;
+        width: 100%;
+        cursor: unset;
         font-size: 16px;
         color: var(--gray);
         display: flex;
