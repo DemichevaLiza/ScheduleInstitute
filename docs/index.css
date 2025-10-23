@@ -178,11 +178,6 @@ table {
     }
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
 a {
     text-decoration: none;
     color: var(--red);
@@ -193,8 +188,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 20px;
+    right: 48%;
     width: 28px;
     height: 24px;
     background-image: url(images/d8f539465b488f2eb195.svg);
@@ -203,7 +198,7 @@ a {
 
 .SO_AllContent {
     display: flex;
-    padding: 60px 12px 0px 12px;
+    padding: 60px 20px 0px 20px;
     flex-direction: column;
     align-items: center;
     gap: 12px;
@@ -237,7 +232,7 @@ a {
     &.h2 {
         width: 100%;
         color: var(--black);
-        font-size: 24px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -245,7 +240,7 @@ a {
 
     &.h1 {
         color: var(--red);
-        font-size: 48px;
+        font-size: 44px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -454,8 +449,6 @@ a {
 
 .A_Logos {
     display: flex;
-    padding-bottom: 30px;
-    padding-top: 30px;
     align-items: center;
     gap: 10px;
     width: 100%;
