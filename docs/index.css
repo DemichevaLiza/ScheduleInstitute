@@ -5,6 +5,8 @@
 html,
 body {
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -507,6 +509,7 @@ a {
     width: 100%;
 
 }
+
 
 .M_flexContent {
     width: 100%;
