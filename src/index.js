@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 const day24Btn = document.querySelector('.day24');
 const day25Btn = document.querySelector('.day25');
 const timeline24 = document.querySelector('.timeline24');
