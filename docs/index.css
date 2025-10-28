@@ -513,6 +513,7 @@ a {
     box-shadow: var(--card-shadow);
     height: auto;
     justify-content: center;
+    transition: transform 0.6s ease;
 }
 
 .M_ContentBlock {
@@ -523,6 +524,8 @@ a {
 }
 
 
+
+
 .M_flexContent {
     width: 100%;
     display: flex;
@@ -530,6 +533,7 @@ a {
 }
 
 .M_TimeBlock.active .M_ContentBlock {
+    transition: transform 0.6s ease;
     display: block;
     /* Показываем содержимое при активном состоянии */
 }
@@ -558,6 +562,10 @@ a {
 }
 
 .A_ArrowContainer {
+    position: sticky;
+    top: 20px;
+    /* на каком расстоянии от верха останется стрелка */
+    z-index: 5;
     width: 100%;
     margin-top: 20px;
     height: 20px;
@@ -577,6 +585,7 @@ a {
 }
 
 .M_TimeBlock.active .Q_Arrow {
+    transition: transform 0.6s ease;
     transform: rotate(-180deg);
     /* Поворачиваем стрелку на 180 градусов при активном состоянии */
 }
