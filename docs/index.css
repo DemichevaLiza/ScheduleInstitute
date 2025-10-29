@@ -316,6 +316,10 @@ a {
         margin-top: -4px;
     }
 
+    &.p4 {
+        margin-top: 20px;
+    }
+
     &.year {
         width: 100%;
         display: flex;
